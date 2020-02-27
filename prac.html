@@ -1,0 +1,120 @@
+<html>
+	<head>
+		<title> My Homepage </title>
+		<link rel="stylesheet" href="./styles/prac.css" />
+	</head>
+	
+	<body>
+		
+		<div class="js-users">
+			<button class="add-button">
+				+
+			</button>
+			<button class="name-button">Junha</button>
+		</div>
+		
+		<div class="js-tab">
+			<button id="check" class="tabLinks checkBtn active">
+				Check
+			</button>
+			<button id="phone" class="tabLinks phoneBtn">
+				Phone
+			</button>
+			<button id="alarm" class="tabLinks alarmBtn">
+				Alarm
+			</button>
+			<button id="memo" class="tabLinks memoBtn">
+				Memo
+			</button>
+			<button id="bucket" class="tabLinks bucketBtn">
+				Bucket
+			</button>
+			<button id="favorites" class="tabLinks favoritesBtn">
+				Favorites
+			</button>
+		</div>
+		
+		<form class="js-welcome glow">
+			<input
+				   type="text"
+				   placeholder="Tell me your name"
+			/>
+			<p>
+				name not received yet
+			</p>
+		</form>
+		
+		<div class="js-clock">
+			<div class="up">
+				<p class="clock-day">
+					show the day
+				</p>
+				<p class="clock-date">
+					show the month and date
+				</p>
+			</div>
+			<div class="down">
+				<p class="clock-time">
+					clock not connected
+				</p>
+			</div>
+		</div>
+		
+		<div id="checkTab" class="tabContent">
+			<form class="js-todos">
+				<input
+					   type="text"
+					   placeholder="오늘 할 일"
+				/>
+				<ul class="bulletless">
+				</ul>
+			</form>
+		</div>
+		
+		<div id="phoneTab" class="tabContent">
+			<div class=phonebook-container>
+				<form class=js-phoneNameForm>
+					<input 
+						   id="name"
+						   type="text"
+						   placeholder="이름"
+					/>
+				</form>
+				<form class=js-phonePhoneForm>
+					<input 
+						   id="phone"
+						   type="text"
+						   placeholder="전화번호"
+					/>
+				</form>
+			</div>
+			<ul id="phone-list" class="bulletless">
+			</ul>
+		</div>
+		
+		<div id="alarmTab" class="tabContent">
+			alarm
+		</div>
+		
+		<div id="memoTab" class="tabContent">
+			memo
+		</div>
+		
+		<div id="bucketTab" class="tabContent">
+			bucket
+		</div>
+
+		<div id="favoritesTab" class="tabContent">
+			favorites
+		</div>
+	</body>
+	
+	<script src="./src/background.js"></script>
+	<script src="./src/users.js"></script>
+	<script src="./src/tab.js"></script>
+	<script src="./src/welcome.js"></script>
+	<script src="./src/clock.js"></script>
+	<script src="./src/todos.js"></script>
+	<script src="./src/phonebook.js"></script>
+	<script src="./src/alarm.js"></script>
+</html>
