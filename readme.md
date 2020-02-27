@@ -6,10 +6,14 @@
 ### 2. 투두s
 - ~~checklist~~
 - ~~전화번호부~~
-- 알람 기능
+- ~~알람 기능~~
 - 메모 기능
 - 즐겨찾기
 - 새로운 유저 등록
+- 오늘 기분에 따라 배경 바뀌게
 
 ### 참고:
-https://webclub.tistory.com/628
+노마드 코더스 강좌 -
+https://academy.nomadcoders.co/p/javascript-basics-for-absolute-beginners-kr
+
+flexbox - https://webclub.tistory.com/628

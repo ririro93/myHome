@@ -6,12 +6,12 @@
 	
 	<body>
 		
-		<div class="js-users">
+		<!-- <div class="js-users">
 			<button class="add-button">
 				+
 			</button>
 			<button class="name-button">Junha</button>
-		</div>
+		</div> -->
 		
 		<div class="js-tab">
 			<button id="check" class="tabLinks checkBtn active">
@@ -93,7 +93,25 @@
 		</div>
 		
 		<div id="alarmTab" class="tabContent">
-			alarm
+			<form class="js-alarm-container">
+				<input 
+					   id="hours"
+					   placeholder="00"
+					   type="text"
+			    />
+				:
+				<input 
+					   id="minutes"
+					   placeholder="00"
+					   type="text"
+			    />
+			</form>
+			<div class="alarm-div">
+				13 : 00
+			</div>
+			<button class="alarm-button">
+				reset
+			</button>
 		</div>
 		
 		<div id="memoTab" class="tabContent">

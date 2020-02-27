@@ -1,0 +1,27 @@
+body {
+	background-color: red;
+	animation: alarm 0.5s infinite alternate;
+	font-size: 20em;
+	color: white;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+}
+
+@keyframes alarm {
+	0% {
+		background-color: red;
+	}
+	25% {
+		background-color: white;
+	}
+	50% {
+		background-color: blue;
+	}
+	75% {
+		background-color: green;
+	}		
+}
