@@ -101,6 +101,8 @@ body {
 
 .tabContent {
 	display: none;
+	width: 92%;
+	float: right;
 }
 
 .js-welcome {
@@ -183,6 +185,20 @@ body {
 	font-size: 1.2em;	
 }
 
+.bulletless li {
+	margin-top: 1em;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	width: 100%
+}
+
+.bulletless li div {
+	width: 80%;
+	flex-shrink: 0;
+	text-align: start;
+}
+
 button {
 	margin-right: 2em;
 	background-color:rgba(255, 255, 255, 0.2);
@@ -193,7 +209,7 @@ button {
 
 .check {
 	position: relative;
-	left: 350%;
+	left: 10%;
 	
 }
 
@@ -228,15 +244,15 @@ button {
 	display: flex;
 	flex-direction: column;
 	position: relative;
-	left: 0;
-	width: 80%;
+	left: 20%;
+	width: 50%;
 }
 
 #phone-list > list {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	margin-bottom: 5px;
+	margin-top: 1em;
 }
 
 #phone-list > list.hide {
@@ -292,12 +308,20 @@ button {
 
 
 .alarm-button {
-	text-align: center;
-	font-size: 2em;
-	position: relative;
-	left: 70%;
-	top: -30%;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
 }
+
+.alarm-button button {
+	text-align: center;
+	font-size: 3em;
+	width: 4em;
+	margin: 0;
+}
+
 
 
 

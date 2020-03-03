@@ -24,12 +24,12 @@ function removeElement(elementId) {
 
 function handleClickCheck(event) {
 	// 줄 긋기
-	event.target.parentNode.classList.toggle("checked");
+	event.target.parentNode.querySelector("div").classList.toggle("checked");
 	
 	// id로 todos에서 checked true로 바꾸기
 	todos.map(todo => {
 		if (todo.id == event.target.parentNode.id) {
-			todo.checked = true;
+			todo.checked = !todo.checked;
 		}
 	});
 	saveTodos();
@@ -46,7 +46,8 @@ function handleSubmit(event) {
 	todoBtn1.type = "button";
 	todoBtn1.onclick = handleClickCan;
 	
-	const todoText = document.createTextNode(todoInput.value);
+	const todoText = document.createElement("div");
+	todoText.innerText = todoInput.value;
 	todoLi.appendChild(todoText);
 	
 	const todoBtn2 = document.createElement("Button");
@@ -86,7 +87,8 @@ function showExistingTodos() {
 		todoBtn1.type = "button";
 		todoBtn1.onclick = handleClickCan;
 
-		const todoText = document.createTextNode(todo.text);
+		const todoText = document.createElement("div");
+		todoText.innerText = todo.text;
 		todoLi.appendChild(todoText);
 
 		const todoBtn2 = document.createElement("Button");
@@ -96,7 +98,7 @@ function showExistingTodos() {
 		todoBtn2.classList.add("check");
 		todoBtn2.onclick = handleClickCheck;
 		if (todo.checked) {
-			todoLi.classList.add("checked");
+			todoText.classList.add("checked");
 		}
 
 		todoList.appendChild(todoLi);

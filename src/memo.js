@@ -10,7 +10,7 @@ const rangeText = document.getElementById("jsRangeText");
 
 // initiate canvas
 canvas.width = 700;
-canvas.height = 300;
+canvas.height = 420;
 
 ctx.fillStyle = "rgb(255, 255, 255, 0.4)";
 ctx.fillRect(0, 0, canvas.width, canvas.height);
@@ -42,7 +42,6 @@ if (canvas) {
 function onMouseMove(event) {
 	const x = event.offsetX;
 	const y = event.offsetY;
-	console.log(event);
 	
 	if(!painting) {
 		ctx.beginPath();
@@ -104,7 +103,7 @@ function onClickColor(event) {
 function handleClickMode(event) {
 	const text = event.target.innerText;
 	if(text == "Fill") {
-		event.target.innerText = "Paint";
+		event.target.innerText = "Draw";
 		filling = false;
 	} else {
 		event.target.innerText = "Fill";
